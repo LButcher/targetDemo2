@@ -25,13 +25,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <!-- Fix for hashrouter removing query params-->
-    <script>
-      if(window.location.search!=window.location.hash.substring(2,))
-        window.location.search=window.location.hash.substring(2,)
-    </script>
-    <!--end fix-->
-
     	<!-- Prehiding Snippet -->
 	<script>
     //prehiding snippet for Adobe Target with asynchronous Launch deployment
@@ -41,7 +34,7 @@
 	<script>
 		window.targetGlobalSettings = {
 
-  cookieDomain: "lbutcher.github.io"
+  cookieDomain: "liam-target-demo.herokuapp.com"
 
 };
 
