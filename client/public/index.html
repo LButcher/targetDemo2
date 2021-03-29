@@ -24,6 +24,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <!-- Fix for hashrouter removing query params-->
+    <script>
+      if(window.location.search!=window.location.hash.substring(2,))
+        window.location.search=window.location.hash.substring(2,)
+    </script>
+    <!--end fix-->
+
+    	<!-- Prehiding Snippet -->
+	<script>
+    //prehiding snippet for Adobe Target with asynchronous Launch deployment
+    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+</script>
+	<!-- End Prehiding Snippet -->
+	<script>
+		window.targetGlobalSettings = {
+
+  cookieDomain: "lbutcher.github.io"
+
+};
+
+	</script>
+	<!-- Manual at.js loading -->
+	<!--<script src="at.js" async></script>-->
+
+	<!-- Launch Tag -->
+	<script src="//assets.adobedtm.com/38e40b98b9df/6da31dd58a49/launch-980ae34bb188-development.min.js" async></script>
+	<!-- End launch tag -->
+
     <title>React App</title>
   </head>
   <body>
